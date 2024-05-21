@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import JsonFileInput from "./components/jsonFileInput/JsonFileInput";
+import JsonToCsvConverter from "./components/jsonFileInput/jsonToCsvConverter/JsonToCsvConverter";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <JsonFileInput />
+      <JsonToCsvConverter />
     </div>
   );
 }
